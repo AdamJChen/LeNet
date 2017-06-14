@@ -98,7 +98,7 @@ with tf.Session(graph = graph) as sess:
 			_, cost_value, train_accuracy = sess.run([train, cost, accuracy], feed_dict =train_feed_dict)
 
 			if batch % 100 == 0:
-				print 'batch : %d/50000 cost: %.2f accuracy: %.2f%%' % (batch, cost_value, train_accuracy * 100)
+				print 'batch : %d/400 cost: %.2f accuracy: %.2f%%' % (batch, cost_value, train_accuracy * 100)
 
 		# feed and run testing
 		test_feed_dict = {X: X_test, y: y_test, n_examples : test_size}
