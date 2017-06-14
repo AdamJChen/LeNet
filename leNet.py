@@ -102,5 +102,5 @@ with tf.Session(graph = graph) as sess:
 
 		# feed and run testing
 		test_feed_dict = {X: X_test, y: y_test, n_examples : test_size}
-		test_accuracy = sess.run([accuracy], feed_dict =test_feed_dict)
+		test_accuracy = sess.run(accuracy, feed_dict =test_feed_dict)
 		print 'test accuracy: %.2f%%' % (test_accuracy * 100)
