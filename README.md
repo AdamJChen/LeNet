@@ -1,4 +1,6 @@
 # LeNet
+This project explores the effectiveness of the LeNet model on the CIFAR10 dataset. It serves as a base line for future experimentation.
+
 ## Tensorflow
 To run the LeNet model written in tensorflow, change directories into the tensorflow folder and run leNet.py using python.
 The LeNet model will be trained on 20 epochs of the training data with batch sizes of 100.
